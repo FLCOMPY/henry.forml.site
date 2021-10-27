@@ -1,0 +1,189 @@
+:root {
+    /*Collor*/
+    --background-one: #181720;
+    --background-two: #1F1D2B;
+    --color-one: #808191;
+    --color-two: #6C5ECF;
+    --color-three: #A8A0B9;
+    --linear-one: linear-gradient(135deg, #1C5BA6 17.88%, #665ECC 63.56%);
+    --linear-two: linear-gradient(90deg, #1C5CA6 25.32%, #6C5ECF 85.38%);
+    --linear-three: linear-gradient(135.38deg, #1C5CA6 0.65%, #635ECA 64.92%);
+
+    /*Fonts*/
+    --font-primary: 800 20px Overpass;
+    --font-secundary: 500 14px Poppins;
+    --font-copyright: 600 14px Overpass;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    user-select: none;
+}
+
+body {
+    background: var(--background-one);
+    font: var(--font-secundary);
+}
+
+.head-css {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-01 {
+    margin-top: 65px !important;
+    margin: auto;
+}
+
+.name-title {
+    font: var(--font-primary);
+    color: var(--color-three);
+    font-size: 23px;
+}
+
+.subtitle {
+    font: var(--font-secundary);
+    color: var(--color-two);
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.cont-02 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.img-logo {
+    width: 8.45rem;
+}
+
+.ionicon {
+    width: 30px;
+    fill: var(--color-two);
+}
+
+.cont-03 {
+    margin: 35px 0 ;
+}
+
+.line01 {
+    height: 1.5px;
+    background: var(--linear-two);
+}
+
+.main-css {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.button-01, .button-02, .button-03, .button-04, .button-05, .button-06 {
+    display: flex;
+    align-items: center;
+}
+
+.button-01 a, .button-02 a, .button-03 a, .button-04 a, .button-05 a, .button-06 a {
+    display: flex;
+    align-items: center;
+}
+
+.button-01 a, .button-02 a, .button-03 a, .button-04 a, .button-05 a, .button-06 a {
+    color: var(--color-two);
+    text-decoration: none;
+    text-align: center;
+}
+
+.button-01 p, .button-02 p, .button-03 p, .button-04 p, .button-05 p, .button-06 p {
+    color: var(--color-two);
+    text-decoration: none;
+    margin-left: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+.button-01 a, .button-02 a, .button-03 a, .button-04 a, .button-05 a, .button-06 a {
+    width: 200px;
+    height: 63px;
+    background: var(--background-two);
+    padding: 15px;
+}
+
+.button-02, .button-03, .button-04, .button-05 {
+    margin: 20px 0;
+}
+
+.button-01, .button-02, .button-03, .button-04, .button-05, .button-06 {
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.button-01 a, .button-02 a, .button-03 a, .button-04 a, .button-05 a, .button-06 a {
+    font-size: 16px;
+    z-index: 0;
+    -webkit-background-clip: text;
+}
+
+.button-01:before, .button-02:before, .button-03:before, .button-04:before, .button-05:before, .button-06:before {
+    content: '';
+    background: var(--linear-one); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.button-01:after, .button-02:after, .button-03:after, .button-04:after, .button-05:after, .button-06:after {
+    content: '';
+    background: var(--background-two);
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    position: absolute;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.foot-css {
+    margin-bottom: 25px;
+}
+
+.cont-05 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.cont-05 a {
+    color: var(--color-one);
+    font: var(--font-copyright);
+    text-decoration: none;
+}
+
+.cont-05 a:hover {
+    color: var(--color-two);
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 768px){
+    .button-01 a, .button-02 a, .button-03 a, .button-04 a, .button-05 a, .button-06 a {
+        width: 350px;
+    }
+}
